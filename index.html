@@ -3,21 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eunice Nzilani - Portfolio</title>
+    <title>Eunice Nzilani | Developer & CS Student</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Background Particles -->
+    <div id="particles-js"></div>
+
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo">Eunice Nzilani</div>
+        <div class="logo">
+            <a href="#home">
+                <span class="logo-text">EN<span class="logo-accent">.</span></span>
+            </a>
+        </div>
         <div class="nav-links">
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>
-            <a href="skills.html">Skills</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
         </div>
         <div class="burger">
             <div class="line1"></div>
@@ -26,27 +49,449 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="profile-container">
-                <div class="profile-circle">
-                    <!-- Profile Image -->
-                    <img src="images/me.jpg" alt="Eunice Nzilani" class="profile-pic">
+    <!-- Main Container -->
+    <main class="main-container">
+
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="section-container">
+                <div class="hero">
+                    <div class="hero-text">
+                        <div class="welcome-text">
+                            <span class="welcome-line"></span>
+                            <p></p>
+                        </div>
+                        <h1 class="glitch" data-text="Eunice Nzilani">Eunice Nzilani</h1>
+                        <div class="hero-subtitle">
+                            <span>I'm a</span>
+                            <div class="text-rotate">
+                                <span>Developer</span>
+                                <span>CS Student</span>
+                                <span>Mobile Enthusiast</span>
+                                <span>UI/UX Designer</span>
+                            </div>
+                        </div>
+                        <p class="hero-description">
+                            Passionate about creating elegant solutions through code and design. Focused on mobile development, machine learning, and full-stack web development.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn btn-primary">
+                                <span>Contact Me</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#about" class="btn btn-secondary">
+                                <span>Learn More</span>
+                            </a>
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/eunice-nzilani-07326726b" class="social-icon" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/eunice56923" class="social-icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://x.com/Nzilani52" class="social-icon" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/nzi.la.ni56" class="social-icon" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <div class="image-wrapper">
+                                <img src="images/me.jpg" alt="Eunice Nzilani">
+                                <div class="image-backdrop"></div>
+                                <div class="backdrop-circle c1"></div>
+                                <div class="backdrop-circle c2"></div>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <div class="tech-item" style="--i:1"><i class="fab fa-python"></i></div>
+                            <div class="tech-item" style="--i:2"><i class="fab fa-js"></i></div>
+                            <div class="tech-item" style="--i:3"><i class="fab fa-react"></i></div>
+                            <div class="tech-item" style="--i:4"><i class="fab fa-html5"></i></div>
+                            <div class="tech-item" style="--i:5"><i class="fab fa-css3-alt"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <p>Scroll Down</p>
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
                 </div>
             </div>
-            <div class="hero-content">
-                <h1>Hello, I'm <span class="highlight">Eunice Nzilani</span></h1>
-                <p class="role">Computer Science Student | Mobile & Web Developer</p>
-                <p class="bio">I'm passionate about building innovative solutions that combine technology with creativity. As a computer science student, I focus on mobile development, machine learning, and web development. I love the challenge of turning ideas into functional applications that solve real problems. What drives me is the ability to make a tangible impact through code, whether it's developing user-friendly apps or creating seamless user experiences. I’m always eager to learn, collaborate, and grow in a fast-paced tech environment.</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="cta-primary">Contact Me</a>
-                    <a href="about.html" class="cta-secondary">Learn More</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-container">
+                <div class="section-title-container">
+                    <h2 class="section-title">About Me</h2>
+                    <span class="section-subtitle">Get to know me better</span>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="about-header">
+                            <h3>Who I Am</h3>
+                            <span class="accent-line"></span>
+                        </div>
+                        <p>
+                            I'm Eunice Nzilani, a dedicated computer science student passionate about mobile development, machine learning, and full-stack web development. My academic journey has been a mix of building technical expertise in programming languages like Python, HTML, CSS, and JavaScript, while also exploring innovative applications in mobile app development and machine learning.
+                        </p>
+                        <p>
+                            I have worked on several projects, including a mentorship platform designed to empower women in tech, and I am in the process of developing a skincare analysis app using machine learning to detect skin issues through a phone camera. My skills extend beyond just coding; I am also committed to creating user-friendly experiences, which is why I am keen on UI/UX design.
+                        </p>
+                        <p>
+                            Along with technical abilities, I possess strong leadership and mentoring experience, having started a career mentorship club during my high school years. Ultimately, I aim to leverage my skills in both tech and leadership to contribute to organizations that focus on growth, innovation, and empowering individuals.
+                        </p>
+                        <div class="about-cta">
+                            <a href="#" class="btn btn-outline">
+                                <span>Download CV</span>
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about-cards">
+                        <div class="exp-card">
+                            <i class="fas fa-award card-icon"></i>
+                            <div class="card-content">
+                                <h4>Experience</h4>
+                                <p class="card-number">5+</p>
+                                <p class="card-text">Years</p>
+                            </div>
+                            <div class="card-decoration"></div>
+                        </div>
+                        <div class="exp-card">
+                            <i class="fas fa-project-diagram card-icon"></i>
+                            <div class="card-content">
+                                <h4>Projects</h4>
+                                <p class="card-number">50+</p>
+                                <p class="card-text">Completed</p>
+                            </div>
+                            <div class="card-decoration"></div>
+                        </div>
+                        <div class="exp-card">
+                            <i class="fas fa-users card-icon"></i>
+                            <div class="card-content">
+                                <h4>Clients</h4>
+                                <p class="card-number">30+</p>
+                                <p class="card-text">Happy</p>
+                            </div>
+                            <div class="card-decoration"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-container">
+                <div class="section-title-container">
+                    <h2 class="section-title">My Skills</h2>
+                    <span class="section-subtitle">What I Bring to the Table</span>
+                </div>
+
+                <div class="skills-content">
+                    <div class="skills-tabs">
+                        <button class="tab-btn active" data-target="technical">Technical Skills</button>
+                    </div>
+
+                    <div class="skills-tab-content active" id="technical">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fab fa-html5"></i>
+                                    <h4>HTML/CSS</h4>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%">
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fab fa-js"></i>
+                                    <h4>JavaScript</h4>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%">
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fab fa-python"></i>
+                                    <h4>Python</h4>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%">
+                                        <span class="skill-percentage">80%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fab fa-react"></i>
+                                    <h4>React</h4>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%">
+                                        <span class="skill-percentage">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <h4>Mobile Development</h4>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 78%">
+                                        <span class="skill-percentage">78%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fas fa-brain"></i>
+                                    <h4>Machine Learning</h4>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%">
+                                        <span class="skill-percentage">70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="tab-btn" data-target="soft">Soft Skills</button>
+                    <div class="skills-tab-content" id="soft">
+                        <div class="skills-grid">
+                            <div class="soft-skill-item">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="soft-skill-info">
+                                    <h4>Team Leadership</h4>
+                                    <p>Experienced in leading teams of varied sizes and coordinating group projects to successful completion.</p>
+                                </div>
+                            </div>
+
+                            <div class="soft-skill-item">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <div class="soft-skill-info">
+                                    <h4>Communication</h4>
+                                    <p>Excellent verbal and written communication skills, able to explain complex concepts in simple terms.</p>
+                                </div>
+                            </div>
+
+                            <div class="soft-skill-item">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-tasks"></i>
+                                </div>
+                                <div class="soft-skill-info">
+                                    <h4>Project Management</h4>
+                                    <p>Proficient in organizing workflows, setting milestones, and ensuring timely delivery of projects.</p>
+                                </div>
+                            </div>
+
+                            <div class="soft-skill-item">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="soft-skill-info">
+                                    <h4>Problem Solving</h4>
+                                    <p>Strong analytical thinker with the ability to approach problems from multiple perspectives.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="section-container">
+                <div class="section-title-container">
+                    <h2 class="section-title">My Services</h2>
+                    <span class="section-subtitle">What I Can Do For You</span>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>I design and develop custom websites tailored to your business needs, with a focus on performance and user experience.</p>
+                        <ul class="service-features">
+                            <li>Responsive Design</li>
+                            <li>Performance Optimization</li>
+                            <li>Cross-browser Compatibility</li>
+                        </ul>
+                        <div class="service-decoration"></div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile App Development</h3>
+                        <p>Creating mobile apps that are functional, user-friendly, and beautiful, for both Android and iOS platforms.</p>
+                        <ul class="service-features">
+                            <li>Native & Cross-platform</li>
+                            <li>Intuitive UI/UX</li>
+                            <li>Offline Functionality</li>
+                        </ul>
+                        <div class="service-decoration"></div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>Designing intuitive and attractive user interfaces for enhanced user experience and increased engagement.</p>
+                        <ul class="service-features">
+                            <li>User Research</li>
+                            <li>Wireframing & Prototyping</li>
+                            <li>Interaction Design</li>
+                        </ul>
+                        <div class="service-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-container">
+                <div class="section-title-container">
+                    <h2 class="section-title">Contact Me</h2>
+                    <span class="section-subtitle">Let's Connect</span>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <h3>Email</h3>
+                            <p>eunicenzilani881@com</p>
+                            <a href="mailto:eunicenzilani881@com" class="contact-link">Send a message</a>
+                        </div>
+
+                        <div class="contact-card">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <h3>Phone</h3>
+                            <p>(254) 793002907</p>
+                            <a href="tel:+254793002907" class="contact-link">Call me</a>
+                        </div>
+
+                        <div class="contact-card">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <h3>Location</h3>
+                            <p>Kenya</p>
+                            <a href="#" class="contact-link">View on map</a>
+                        </div>
+
+                        <div class="social-connect">
+                            <h3>Connect with Me</h3>
+                            <div class="social-icons-large">
+                                <a href="https://www.linkedin.com/in/eunice-nzilani-07326726b" target="_blank" class="social-icon-large">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/eunice56923" target="_blank" class="social-icon-large">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://x.com/Nzilani52" target="_blank" class="social-icon-large">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.instagram.com/nzi.la.ni56" target="_blank" class="social-icon-large">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" placeholder="Enter the subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-text">EN<span class="logo-accent">.</span></span>
+                <p>Turning ideas into reality</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Social</h4>
+                    <a href="https://www.linkedin.com/in/eunice-nzilani-07326726b" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/eunice56923" target="_blank">GitHub</a>
+                    <a href="https://x.com/Nzilani52" target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com/nzi.la.ni56" target="_blank">Instagram</a>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="footer-bottom">
+            <p>© 2025 Eunice Nzilani. All Rights Reserved.</p>
+            <div class="scroll-to-top">
+                <i class="fas fa-arrow-up"></i>
+            </div>
+        </div>
+    </footer>
 
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
