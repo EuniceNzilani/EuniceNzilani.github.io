@@ -34,8 +34,7 @@
         </div>
         <div class="nav-links">
             <a href="#home" class="nav-link">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
             <a href="#services" class="nav-link">Services</a>
             <a href="#contact" class="nav-link">Contact</a>
         </div>
@@ -79,8 +78,8 @@
                                 <span>Contact Me</span>
                                 <i class="fas fa-arrow-right"></i>
                             </a>
-                            <a href="#about" class="btn btn-secondary">
-                                <span>Learn More</span>
+                            <a href="#projects" class="btn btn-secondary">
+                                <span>See My Work</span>
                             </a>
                         </div>
                         <div class="social-icons">
@@ -125,204 +124,111 @@
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="section">
+        <!-- Projects Section -->
+        <section id="projects" class="section">
             <div class="section-container">
                 <div class="section-title-container">
-                    <h2 class="section-title">About Me</h2>
-                    <span class="section-subtitle">Get to know me better</span>
+                    <h2 class="section-title">My Projects</h2>
+                    <span class="section-subtitle">Recent Work & Achievements</span>
                 </div>
 
-                <div class="about-content">
-                    <div class="about-text">
-                        <div class="about-header">
-                            <h3>Who I Am</h3>
-                            <span class="accent-line"></span>
+                <div class="projects-grid">
+                    <div class="project-card featured-project">
+                        <div class="project-image">
+                            <img src="images/visual1.png" alt="VisualAI Dashboard">
                         </div>
-                        <p>
-                            I'm Eunice Nzilani, a dedicated computer science student passionate about mobile development, machine learning, and full-stack web development. My academic journey has been a mix of building technical expertise in programming languages like Python, HTML, CSS, and JavaScript, while also exploring innovative applications in mobile app development and machine learning.
-                        </p>
-                        <p>
-                            I have worked on several projects, including a mentorship platform designed to empower women in tech, and I am in the process of developing a skincare analysis app using machine learning to detect skin issues through a phone camera. My skills extend beyond just coding; I am also committed to creating user-friendly experiences, which is why I am keen on UI/UX design.
-                        </p>
-                        <p>
-                            Along with technical abilities, I possess strong leadership and mentoring experience, having started a career mentorship club during my high school years. Ultimately, I aim to leverage my skills in both tech and leadership to contribute to organizations that focus on growth, innovation, and empowering individuals.
-                        </p>
-                        <div class="about-cta">
-                            <a href="#" class="btn btn-outline">
-                                <span>Download CV</span>
-                                <i class="fas fa-download"></i>
-                            </a>
+                        <div class="project-content">
+                            <h3>Data Visualization Dashboard: VisualAI</h3>
+                            <p>
+                                VisualAI is an interactive data visualization platform that transforms complex datasets into intuitive, explorable visualizations. Inspired by Tableau's functionality but built from the ground up, this tool empowers users to derive meaningful insights through customizable dashboards.
+                            </p>
+                            <p>
+                                The application leverages React for the frontend with D3.js/Recharts for dynamic visualizations, while a Node.js backend handles data processing. Users can upload Excel spreadsheets and instantly generate professional charts, graphs, and maps with AI-assisted recommendations for optimal visualization types based on data patterns.
+                            </p>
+                            <p>
+                                VisualAI features real-time data updates, customizable views, advanced filtering capabilities, and export options—making data exploration accessible to both analysts and non-technical users alike.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">AI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://visual-ai-insights-dashboard.vercel.app/" class="btn btn-small" target="_blank">
+                                    <span>Live Demo</span>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/eunice56923/visualAI" class="btn btn-small btn-outline" target="_blank">
+                                    <span>View Code</span>
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="about-cards">
-                        <div class="exp-card">
-                            <i class="fas fa-award card-icon"></i>
-                            <div class="card-content">
-                                <h4>Experience</h4>
-                                <p class="card-number">5+</p>
-                                <p class="card-text">Years</p>
-                            </div>
-                            <div class="card-decoration"></div>
+                    <!--
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/skincare-app.jpg" alt="SkinSense App">
                         </div>
-                        <div class="exp-card">
-                            <i class="fas fa-project-diagram card-icon"></i>
-                            <div class="card-content">
-                                <h4>Projects</h4>
-                                <p class="card-number">50+</p>
-                                <p class="card-text">Completed</p>
+                        <div class="project-content">
+                            <h3>SkinSense: ML-Powered Skin Analysis</h3>
+                            <p>
+                                A mobile application that uses machine learning to analyze skin conditions through smartphone camera photos. The app can identify common skin issues and provide personalized recommendations.
+                            </p>
+                            <p>
+                                Built with React Native and TensorFlow.js, SkinSense features an intuitive interface, personalized skincare routines, and progress tracking to help users achieve healthier skin.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">ML</span>
+                                <span class="tech-tag">Firebase</span>
                             </div>
-                            <div class="card-decoration"></div>
-                        </div>
-                        <div class="exp-card">
-                            <i class="fas fa-users card-icon"></i>
-                            <div class="card-content">
-                                <h4>Clients</h4>
-                                <p class="card-number">30+</p>
-                                <p class="card-text">Happy</p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-small btn-outline">
+                                    <span>Coming Soon</span>
+                                    <i class="fas fa-clock"></i>
+                                </a>
                             </div>
-                            <div class="card-decoration"></div>
                         </div>
                     </div>
+                     
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/mentor-platform.jpg" alt="WomenTechConnect">
+                        </div>
+                        <div class="project-content">
+                            <h3>WomenTechConnect: Mentorship Platform</h3>
+                            <p>
+                                A web platform designed to connect women in technology with mentors in their desired career paths. The platform features mentor matching algorithms, scheduling tools, and resource sharing.
+                            </p>
+                            <p>
+                                Built using the MERN stack (MongoDB, Express, React, Node.js) with real-time chat functionality and event management for workshops and networking sessions.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Socket.io</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-small">
+                                    <span>Live Demo</span>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="btn btn-small btn-outline">
+                                    <span>View Code</span>
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>-->
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <div class="section-container">
-                <div class="section-title-container">
-                    <h2 class="section-title">My Skills</h2>
-                    <span class="section-subtitle">What I Bring to the Table</span>
-                </div>
-
-                <div class="skills-content">
-                    <div class="skills-tabs">
-                        <button class="tab-btn active" data-target="technical">Technical Skills</button>
-                    </div>
-
-                    <div class="skills-tab-content active" id="technical">
-                        <div class="skills-grid">
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <i class="fab fa-html5"></i>
-                                    <h4>HTML/CSS</h4>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 90%">
-                                        <span class="skill-percentage">90%</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <i class="fab fa-js"></i>
-                                    <h4>JavaScript</h4>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 85%">
-                                        <span class="skill-percentage">85%</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <i class="fab fa-python"></i>
-                                    <h4>Python</h4>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 80%">
-                                        <span class="skill-percentage">80%</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <i class="fab fa-react"></i>
-                                    <h4>React</h4>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 75%">
-                                        <span class="skill-percentage">75%</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <i class="fas fa-mobile-alt"></i>
-                                    <h4>Mobile Development</h4>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 78%">
-                                        <span class="skill-percentage">78%</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <i class="fas fa-brain"></i>
-                                    <h4>Machine Learning</h4>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 70%">
-                                        <span class="skill-percentage">70%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="tab-btn" data-target="soft">Soft Skills</button>
-                    <div class="skills-tab-content" id="soft">
-                        <div class="skills-grid">
-                            <div class="soft-skill-item">
-                                <div class="soft-skill-icon">
-                                    <i class="fas fa-users"></i>
-                                </div>
-                                <div class="soft-skill-info">
-                                    <h4>Team Leadership</h4>
-                                    <p>Experienced in leading teams of varied sizes and coordinating group projects to successful completion.</p>
-                                </div>
-                            </div>
-
-                            <div class="soft-skill-item">
-                                <div class="soft-skill-icon">
-                                    <i class="fas fa-comments"></i>
-                                </div>
-                                <div class="soft-skill-info">
-                                    <h4>Communication</h4>
-                                    <p>Excellent verbal and written communication skills, able to explain complex concepts in simple terms.</p>
-                                </div>
-                            </div>
-
-                            <div class="soft-skill-item">
-                                <div class="soft-skill-icon">
-                                    <i class="fas fa-tasks"></i>
-                                </div>
-                                <div class="soft-skill-info">
-                                    <h4>Project Management</h4>
-                                    <p>Proficient in organizing workflows, setting milestones, and ensuring timely delivery of projects.</p>
-                                </div>
-                            </div>
-
-                            <div class="soft-skill-item">
-                                <div class="soft-skill-icon">
-                                    <i class="fas fa-lightbulb"></i>
-                                </div>
-                                <div class="soft-skill-info">
-                                    <h4>Problem Solving</h4>
-                                    <p>Strong analytical thinker with the ability to approach problems from multiple perspectives.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Skills section removed as requested -->
 
         <!-- Services Section -->
         <section id="services" class="section">
@@ -468,8 +374,7 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
                     <a href="#services">Services</a>
                     <a href="#contact">Contact</a>
                 </div>
