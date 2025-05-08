@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eunice Nzilani | Developer & CS Student</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Background Particles -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#home">
+                <span class="logo-text">EN<span class="logo-accent">.</span></span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="main-container">
+
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="section-container">
+                <div class="hero">
+                    <div class="hero-text">
+                        <div class="welcome-text">
+                            <span class="welcome-line"></span>
+                            <p></p>
+                        </div>
+                        <h1 class="glitch" data-text="Eunice Nzilani">Eunice Nzilani</h1>
+                        <div class="hero-subtitle">
+                            <span>I'm a</span>
+                            <div class="text-rotate">
+                                <span>Developer</span>
+                                <span>CS Student</span>
+                                <span>Mobile Enthusiast</span>
+                                <span>UI/UX Designer</span>
+                            </div>
+                        </div>
+                        <p class="hero-description">
+                            Passionate about creating elegant solutions through code and design. Focused on mobile development, machine learning, and full-stack web development.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn btn-primary">
+                                <span>Contact Me</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#projects" class="btn btn-secondary">
+                                <span>See My Work</span>
+                            </a>
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/eunice-nzilani-07326726b" class="social-icon" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/eunice56923" class="social-icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://x.com/Nzilani52" class="social-icon" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/nzi.la.ni56" class="social-icon" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <div class="image-wrapper">
+                                <img src="images/me.jpg" alt="Eunice Nzilani">
+                                <div class="image-backdrop"></div>
+                                <div class="backdrop-circle c1"></div>
+                                <div class="backdrop-circle c2"></div>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <div class="tech-item" style="--i:1"><i class="fab fa-python"></i></div>
+                            <div class="tech-item" style="--i:2"><i class="fab fa-js"></i></div>
+                            <div class="tech-item" style="--i:3"><i class="fab fa-react"></i></div>
+                            <div class="tech-item" style="--i:4"><i class="fab fa-html5"></i></div>
+                            <div class="tech-item" style="--i:5"><i class="fab fa-css3-alt"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <p>Scroll Down</p>
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-container">
+                <div class="section-title-container">
+                    <h2 class="section-title">My Projects</h2>
+                    <span class="section-subtitle">Recent Work & Achievements</span>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card featured-project">
+                        <div class="project-image">
+                            <img src="images/visual1.png" alt="VisualAI Dashboard">
+                        </div>
+                        <div class="project-content">
+                            <h3>Data Visualization Dashboard: VisualAI</h3>
+                            <p>
+                                VisualAI is an interactive data visualization platform that transforms complex datasets into intuitive, explorable visualizations. Inspired by Tableau's functionality but built from the ground up, this tool empowers users to derive meaningful insights through customizable dashboards.
+                            </p>
+                            <p>
+                                The application leverages React for the frontend with D3.js/Recharts for dynamic visualizations, while a Node.js backend handles data processing. Users can upload Excel spreadsheets and instantly generate professional charts, graphs, and maps with AI-assisted recommendations for optimal visualization types based on data patterns.
+                            </p>
+                            <p>
+                                VisualAI features real-time data updates, customizable views, advanced filtering capabilities, and export options—making data exploration accessible to both analysts and non-technical users alike.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">AI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://visual-ai-insights-dashboard.vercel.app/" class="btn btn-small" target="_blank">
+                                    <span>Live Demo</span>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/eunice56923/visualAI" class="btn btn-small btn-outline" target="_blank">
+                                    <span>View Code</span>
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/skincare-app.jpg" alt="SkinSense App">
+                        </div>
+                        <div class="project-content">
+                            <h3>SkinSense: ML-Powered Skin Analysis</h3>
+                            <p>
+                                A mobile application that uses machine learning to analyze skin conditions through smartphone camera photos. The app can identify common skin issues and provide personalized recommendations.
+                            </p>
+                            <p>
+                                Built with React Native and TensorFlow.js, SkinSense features an intuitive interface, personalized skincare routines, and progress tracking to help users achieve healthier skin.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">ML</span>
+                                <span class="tech-tag">Firebase</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-small btn-outline">
+                                    <span>Coming Soon</span>
+                                    <i class="fas fa-clock"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                     
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/mentor-platform.jpg" alt="WomenTechConnect">
+                        </div>
+                        <div class="project-content">
+                            <h3>WomenTechConnect: Mentorship Platform</h3>
+                            <p>
+                                A web platform designed to connect women in technology with mentors in their desired career paths. The platform features mentor matching algorithms, scheduling tools, and resource sharing.
+                            </p>
+                            <p>
+                                Built using the MERN stack (MongoDB, Express, React, Node.js) with real-time chat functionality and event management for workshops and networking sessions.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Socket.io</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-small">
+                                    <span>Live Demo</span>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="btn btn-small btn-outline">
+                                    <span>View Code</span>
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills section removed as requested -->
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="section-container">
+                <div class="section-title-container">
+                    <h2 class="section-title">My Services</h2>
+                    <span class="section-subtitle">What I Can Do For You</span>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>I design and develop custom websites tailored to your business needs, with a focus on performance and user experience.</p>
+                        <ul class="service-features">
+                            <li>Responsive Design</li>
+                            <li>Performance Optimization</li>
+                            <li>Cross-browser Compatibility</li>
+                        </ul>
+                        <div class="service-decoration"></div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile App Development</h3>
+                        <p>Creating mobile apps that are functional, user-friendly, and beautiful, for both Android and iOS platforms.</p>
+                        <ul class="service-features">
+                            <li>Native & Cross-platform</li>
+                            <li>Intuitive UI/UX</li>
+                            <li>Offline Functionality</li>
+                        </ul>
+                        <div class="service-decoration"></div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>Designing intuitive and attractive user interfaces for enhanced user experience and increased engagement.</p>
+                        <ul class="service-features">
+                            <li>User Research</li>
+                            <li>Wireframing & Prototyping</li>
+                            <li>Interaction Design</li>
+                        </ul>
+                        <div class="service-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-container">
+                <div class="section-title-container">
+                    <h2 class="section-title">Contact Me</h2>
+                    <span class="section-subtitle">Let's Connect</span>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <h3>Email</h3>
+                            <p>eunicenzilani881@com</p>
+                            <a href="mailto:eunicenzilani881@com" class="contact-link">Send a message</a>
+                        </div>
+
+                        <div class="contact-card">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <h3>Phone</h3>
+                            <p>(254) 793002907</p>
+                            <a href="tel:+254793002907" class="contact-link">Call me</a>
+                        </div>
+
+                        <div class="contact-card">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <h3>Location</h3>
+                            <p>Kenya</p>
+                            <a href="#" class="contact-link">View on map</a>
+                        </div>
+
+                        <div class="social-connect">
+                            <h3>Connect with Me</h3>
+                            <div class="social-icons-large">
+                                <a href="https://www.linkedin.com/in/eunice-nzilani-07326726b" target="_blank" class="social-icon-large">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/eunice56923" target="_blank" class="social-icon-large">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://x.com/Nzilani52" target="_blank" class="social-icon-large">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.instagram.com/nzi.la.ni56" target="_blank" class="social-icon-large">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" placeholder="Enter the subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-text">EN<span class="logo-accent">.</span></span>
+                <p>Turning ideas into reality</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Social</h4>
+                    <a href="https://www.linkedin.com/in/eunice-nzilani-07326726b" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/eunice56923" target="_blank">GitHub</a>
+                    <a href="https://x.com/Nzilani52" target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com/nzi.la.ni56" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Eunice Nzilani. All Rights Reserved.</p>
+            <div class="scroll-to-top">
+                <i class="fas fa-arrow-up"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
