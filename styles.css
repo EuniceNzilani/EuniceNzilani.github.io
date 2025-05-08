@@ -447,9 +447,10 @@ body {
     color: #ccc;
 }
 
-/* Project Section Layout Updates */
+/* Project Section Layout with Fixed Image Sizing */
 .projects-grid {
     margin-top: 40px;
+    width: 100%;
 }
 
 .project-card {
@@ -460,45 +461,44 @@ body {
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
-/* Specific styling for featured project to make it horizontal */
+/* Featured project specific styling */
 .featured-project {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    gap: 20px;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 20px;
 }
 
+/* Explicitly control the image container */
 .featured-project .project-image {
-    flex: 0 0 40%;
-    max-width: 40%;
+    flex: 0 0 300px; /* Fixed width */
+    width: 300px;
+    min-width: 300px; /* Ensures it doesn't shrink below this */
+    height: auto;
+    max-height: 400px; /* Limit max height */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px;
-}
-
-.featured-project .project-content {
-    flex: 0 0 60%;
-    padding: 25px 30px 25px 0;
-}
-
-.project-image {
     overflow: hidden;
-    position: relative;
-}
-
-.project-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: transform 0.5s ease;
     border-radius: 8px;
 }
 
-.project-content {
-    padding: 25px;
+.featured-project .project-image img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain; /* Changed to contain to preserve aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.featured-project .project-content {
+    flex: 1;
+    padding: 0 10px;
 }
 
 .project-content h3 {
@@ -518,7 +518,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .tech-tag {
@@ -533,6 +533,67 @@ body {
 .project-links {
     display: flex;
     gap: 15px;
+    margin-top: 15px;
+}
+
+.btn-small {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #ff0099;
+    color: #ff0099;
+}
+
+.btn-outline:hover {
+    background: #ff0099;
+    color: #fff;
+}
+
+/* Hover effects */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Fix for GitHub Pages and other deployment environments */
+/* Sometimes image paths need additional handling */
+.project-image img[src$=".png"],
+.project-image img[src$=".jpg"],
+.project-image img[src$=".jpeg"] {
+    display: block;
+    max-width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .featured-project {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .featured-project .project-image {
+        width: 100%;
+        max-width: 400px;
+        flex: 0 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-links {
+        flex-direction: column;
+    }
+    
+    .project-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .featured-project .project-image {
+        max-width: 100%;
+    }
 }
 
 .btn-small {
